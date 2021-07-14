@@ -1,0 +1,492 @@
+/*************************************************************
+*                                                            *
+*                                                            *
+*                  Common CSS Goes Here                      *
+*                                                            *
+*                                                            *
+**************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700;900&display=swap');
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+}
+li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+.common-links i{
+    margin-left: 8px;
+}
+.common-links:hover i{
+    -webkit-animation: bounceright 0.3s alternate ease infinite;
+    animation: bounceright 0.3s alternate ease infinite;
+}
+@keyframes bounceright{
+    0%{
+        -webkit-transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(3px);
+    }
+}
+.content-container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.common-container{
+    padding: 20px 60px;
+    margin-bottom: 100px;
+}
+.card-view{
+    width: 330px;
+    height: 474px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 0.15);
+}
+.gallery-section{
+    display: grid;
+}
+.red-color{
+    background: #e01a22;
+    border: 1px solid #e01a22;
+    margin: 5px 0 30px 0;
+    height: 3px;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+}
+.black-color{
+    background: #000;
+    border: 1px solid #000;
+    height: 3px;
+    width: 15%;
+    margin: 0;
+}
+.game-status{
+    background: #e01a22;
+    color: #fff;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.last-match-result-card{
+    width: 500px;
+    height: 250px;
+    padding: 10px 30px;
+    background-color: white;
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 0.15);
+}
+.last-match-result-card li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    
+}
+.last-match-player-name{
+    width: 85%;
+    margin: 0 0 3% 0;
+}
+.common-links{
+    width: 173px;
+    height: 44px;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    color: white;
+}
+/*************************************************************
+*                                                            *
+*                                                            *
+*               Header Section CSS Goes Here                 *
+*                                                            *
+*                                                            *
+**************************************************************/
+header{
+    width: 100%;
+    height: 677px;
+    background-color: #2D25A0;
+}
+.navigation-container{
+    height: 44px;
+    padding: 60px 60px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hidden-icon i{
+    color: white;
+    font-size: 24px;
+    display: none;
+    margin-left: -42px;
+}
+nav li{
+    margin-right: 36px;
+}
+nav li:last-child{
+    margin-left: 10px;
+    margin-right: 0;
+}
+nav li a{
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+.login-button a{
+    Width: 123px;
+    Height: 44px;
+    font-size: 16px;
+    font-weight: 500;
+    Padding: 10px 24px;
+    background-color: #E02C6D;
+    color: white;
+}
+.login-link i{
+    margin-right: 8px;
+} 
+.hero-image-div{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* margin: 0 12px 0 55px; */
+    margin: 0 0 0 60px;
+}
+.welcome-text{
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0 145px 0 0;
+    padding: 0;
+    color: white;
+}
+.hero-image-text{
+    margin-bottom: 27px;
+}
+.hero-image-text-section a{
+    Width: 168px;
+    Height: 44px;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+.hero-image-text-section a i{
+    margin-left: 8px;
+}
+.hero-image-image-section img{
+    Width: 556px;
+    Height: 438px;
+}
+/*************************************************************
+*                                                            *
+*                                                            *
+*                 Players Section CSS Goes Here              *
+*                                                            *
+*                                                            *
+**************************************************************/
+.players-section{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 27px 15px;
+}
+.card-view img{
+    width: 100%;
+}
+.player-name{
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 40px;
+}
+.player-description{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+}
+/*************************************************************
+*                                                            *
+*                                                            *
+*             All Highlighta Section CSS Goes Here           *
+*                                                            *
+*                                                            *
+**************************************************************/
+.highlight-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.article-text{
+    padding: 0;
+    margin-right: 66px;
+}
+.article-text .section-heading{
+    margin: 15px 0;
+    font-size: 48px;
+    font-weight: 700;
+}
+.article-text .section-description{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+.article-image img{
+    width: 100%;
+}
+/*************************************************************
+*                                                            *
+*                                                            *
+*         Last Match Result Section CSS Goes Here            *
+*                                                            *
+*                                                            *
+**************************************************************/
+.last-match-result{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.team-name{
+    border-bottom: 3px solid #ddd;
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    margin-right: 120px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+/*************************************************************
+*                                                            *
+*                                                            *
+*              Gallery Section CSS Goes Here                 *
+*                                                            *
+*                                                            *
+**************************************************************/
+.gallery-view{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.gallery-view img{
+    width: 100%;
+    box-shadow: 0 10px 10px 0 rgb(0 0 0 / 30%);
+    margin: 0px;
+}
+/*************************************************************
+*                                                            *
+*                                                            *
+*               Footer Section CSS Goes Here                 *
+*                                                            *
+*                                                            *
+**************************************************************/
+#footer-contents{
+    flex-direction: column;
+}
+.footer-logo-image img{
+    width: 420px;
+    height: 110px;
+    margin: 20px 0;
+}
+#social-media-links{
+    margin-bottom: 20px;
+}
+.social-links{
+    width: 32px;
+    height: 32px;
+    margin: 0px 14px;
+    border-radius: 50%;
+    background-color: #969BAB;
+    opacity: 0.5;    
+    text-align: center;
+    vertical-align: bottom;
+    line-height: 34px;
+}
+.social-links .fab{
+    font-size: 16px;
+    color: #0B0D17;
+    font-weight: 700;
+}
+footer span{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+/*************************************************************
+*                                                            *
+*                                                            *
+*                  Responsive CSS Goes Here                  *
+*                                                            *
+*                                                            *
+**************************************************************/
+@media only screen and (max-width: 668px) {
+    /*************************************************************
+    *                                                            *
+    *                                                            *
+    *                  Common CSS Goes Here                      *
+    *                                                            *
+    *                                                            *
+    **************************************************************/
+    .common-container{
+        margin-bottom: 50px;
+        padding: 15px;
+    }
+    /*************************************************************
+    *                                                            *
+    *                                                            *
+    *               Header Section CSS Goes Here                 *
+    *                                                            *
+    *                                                            *
+    **************************************************************/
+    header{
+        height: 695px;
+    }
+    .navigation-container{
+        padding: 33px 21px 46px 16px;
+    }
+    nav li{
+        display: none;
+    }
+    .hidden-icon i{
+        display: block;
+        margin: 0;
+    } 
+    .hero-image-div{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+        margin: 0;
+        padding: 15px;
+    }
+    .welcome-text{
+        margin: 0;
+        font-size: 36px;
+    }
+    .hero-image-text{
+        margin-bottom: 27px;
+    }
+    .hero-image-text-section a{
+        Width: 168px;
+        Height: 44px;
+        padding: 10px 24px;
+        background-color: #E02C6D;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+    }
+    .hero-image-image-section img{
+        margin-top: 50px;
+        Width: 329px;
+        Height: 260px;
+    }
+    /*************************************************************
+    *                                                            *
+    *                                                            *
+    *                 Players Section CSS Goes Here              *
+    *                                                            *
+    *                                                            *
+    **************************************************************/
+    .players-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card-view{
+        padding: 0;
+    }
+    .card-view img{
+        width: 100%;
+    }
+    .card-view-players{
+        padding: 15px;
+    }
+    /*************************************************************
+    *                                                            *
+    *                                                            *
+    *             All Highlights Section CSS Goes Here           *
+    *                                                            *
+    *                                                            *
+    **************************************************************/
+    .highlight-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+    .article-text{
+        padding: 15px 0;
+        margin-right: 0;
+    }
+    .article-text .section-heading{
+        margin: 15px 0;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .article-text .section-description{
+        color: #6C6C6C;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 24px;
+    }
+    .article-image img{
+        width: 100%;
+    }
+    /*************************************************************
+    *                                                            *
+    *                                                            *
+    *         Last Match Result Section CSS Goes Here            *
+    *                                                            *
+    *                                                            *
+    **************************************************************/
+    .last-match-result{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        margin-top: 50px;
+    }
+    .last-match-result-card{
+        width: 330px;
+    }
+    /*************************************************************
+    *                                                            *
+    *                                                            *
+    *              Gallery Section CSS Goes Here                 *
+    *                                                            *
+    *                                                            *
+    **************************************************************/
+    .gallery-view{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+    .gallery-view img{
+        width: 100%;
+        box-shadow: 0 10px 10px 0 rgb(0 0 0 / 30%);
+        margin: 0px;
+    }
+    /*************************************************************
+    *                                                            *
+    *                                                            *
+    *               Footer Section CSS Goes Here                 *
+    *                                                            *
+    *                                                            *
+    **************************************************************/
+    .footer-logo-image img{
+        width: 276px;
+        height: 92px;
+    }
+    footer span{
+        margin-bottom: 187px;
+    }
+}
